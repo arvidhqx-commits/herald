@@ -1,0 +1,27 @@
+# Herald configuration
+# Built-in placeholders: {player} {online} {max} {world}
+# PlaceholderAPI placeholders (%...%) work when PAPI is installed.
+# All text accepts MiniMessage (<gradient:#00c3ff:#7b2ff7>...) and legacy & codes.
+
+tab:
+  enabled: true
+  # Seconds between animation frames
+  interval: 3
+  headers:
+    - '<gradient:#00c3ff:#7b2ff7><bold>A Minecraft Server</bold></gradient>'
+    - '<aqua><bold>A Minecraft Server</bold></aqua>'
+  footers:
+    - '<gray>Online: <white>{online}</white>/<white>{max}</white></gray>'
+
+announcements:
+  enabled: true
+  # Seconds between announcements (rotates through the list)
+  interval: 180
+  list:
+    - type: CHAT
+      text: '<gray>[<aqua>i</aqua>]</gray> <white>This server uses Herald for announcements.</white>'
+    - type: ACTIONBAR
+      text: '<yellow>Enjoying your stay, {player}?</yellow>'
+    - type: TITLE
+      title: '<aqua>Welcome!</aqua>'
+      subtitle: '<gray>Have fun, {player}</gray>'

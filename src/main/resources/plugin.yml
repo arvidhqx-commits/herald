@@ -1,0 +1,13 @@
+name: Herald
+version: '${version}'
+main: dev.herald.HeraldPlugin
+api-version: '1.21'
+softdepend: [PlaceholderAPI]
+description: Animated tab header/footer plus scheduled title, action bar and chat announcements. TitleManager-style, modern.
+commands:
+  herald:
+    description: Herald admin command
+    permission: herald.admin
+permissions:
+  herald.admin:
+    default: op
